@@ -1,28 +1,15 @@
 import React from "react";
+import "../../styles/index.css";
+import AudioPlayer from "./AudioPlayer";
 
-//include images into your bundle
-import rigoImage from "../../img/rigo-baby.jpg";
-
-//create your first component
 const Home = () => {
-	return (
-		<div className="text-center">
-            
+  return (
+    <div className="container">
+	<h1 className="text-center mt-5">My Audio Player!</h1>
+      <AudioPlayer audioSrc="./audio/audio.mp3" />
 
-			<h1 className="text-center mt-5">Hello Rigo!</h1>
-			<p>
-				<img src={rigoImage} />
-			</p>
-			<a href="#" className="btn btn-success">
-				If you see this green button... bootstrap is working...
-			</a>
-			<p>
-				Made by{" "}
-				<a href="http://www.4geeksacademy.com">4Geeks Academy</a>, with
-				love!
-			</p>
-		</div>
-	);
+         </div>
+  );
 };
 
 export default Home;

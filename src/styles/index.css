@@ -9,3 +9,81 @@
     import 'relative/path/to/stylesheet.scss';
 
 */
+* {
+    font-family: "Poppins", sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+/* All CSS styles for the component are defined in this file */
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    background-color: #d0dbee;
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */
+}
+
+.player-container {
+  display: flex;
+  align-items: center;     /* Vertical center */
+  justify-content: center; /* Horizontal center */
+  height: 100vh;           /* Full screen height */
+  background-color: #d0dbee; /* Optional background */
+}
+
+.player-card {
+    width: 20rem;
+    background-color: #f1f4f9;
+    border-radius: 0.5rem;
+    padding: 1rem;
+}
+
+img {
+    width: 20rem;
+    height: auto;
+    border-radius: 0.5rem;
+}
+
+input[type="range"] {
+    width: 100px;
+    height: 5px;
+    accent-color: #436ee6;
+    outline: none;
+}
+
+.track-duration {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 10px; 
+}
+
+.track-duration > p {
+    font-size: 13px;
+    font-weight: 500;
+    color: #18181f;
+    margin: 0;
+}
+
+button {
+    width: 3rem;
+    height: 3rem;
+    font-size: 34px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: black;
+    background-color: #436ee6;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    margin: 5px auto 10px auto;
+}
+
+.material-symbols-rounded {
+    color: black;
+}
